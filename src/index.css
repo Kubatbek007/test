@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+
+.navbar {
+    background-color: #fff !important;
+}
+
+
+.navbar-brand {
+    font-size: 1.9rem !important;
+    color: #565387 !important;
+}
+
+.navbar a {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.menu_active{
+    color: #565387 !important;
+    font-weight: bold;
+    border-bottom: 1px solid #565387;
+}
+
+
+.navbar a:hover {
+    color: #3498db !important;
+}
+
+
+.header-img {
+    text-align: right;
+
+}
+
+#header .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes up-down{
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+.button {
+    position: relative;
+    color: #3498db;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    overflow: hidden;
+    padding: 8px 20px;
+    transition: 0.2s;
+}
+
+.button__line {
+    position: absolute;
+    display: block;
+}
+
+.button__line--top {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #3498db);
+}
+
+.button:hover .button__line--top {
+    left: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button__line--bottom {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #3498db);
+}
+
+.button:hover .button__line--bottom {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button__line--left {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, #3498db);
+}
+
+.button:hover .button__line--left {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button__line--right {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #3498db);
+}
+
+.button:hover .button__line--right {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button:hover {
+    transition-delay: 1s;
+    background-color: #3498db;
+    /*box-shadow: 0 0 10px #3498db, 0 0 30px #3498db;*/
+    color: white;
+    border-radius: 50px;
+}
+
+#header {
+    width: 100%;
+    height: 80vh;
+    margin-top: 10px;
+}
+
+#header h1 {
+    margin: 0 0 10px 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+}
+
+#header .brand-name {
+    color: #3498db;
+}
+
+footer p {
+    padding: 0;
+    margin: 0;
+}
+
+.b{
+    background-color: white;
+}
+
+
+
+@media (max-width: 991px) {
+    #header {
+        height: 80vh;
+        text-align: center;
+    }
+
+    #header .header-img {
+        text-align: center;
+    }
+
+    #header .header-img img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 700px) {
+    #header {
+        margin-top: 20px;
+    }
+    #header h1 {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    #header h2 {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    #header .header-img img {
+        width: 60%;
+    }
+    .cardd{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 10px;
+    }
+    .back {
+        display: flex;
+        align-items: self-end;
+        justify-content: end;
+        width:  auto;
+        height: 40px;
+    }
+
+}
+
+@media (max-width: 920px){
+    .navbar-brand {
+        font-size: 1.5rem !important;
+        /*margin-left: px;*/
+        margin-right: 10px;
+    }
+
+    .menu_active {
+        font-weight: bold;
+        border-bottom: none;
+    }
+    #header .header-img img {
+        width: 50%;
+    }
+
+}
+
+.dashboard-card {
+    background-color: #f6f8fa;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.dashboard-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-detail {
+    padding: 10px;
+}
+
+.card-detail > h5 > p {
+    float: right;
+}
+
+#more {
+    display: none;
+}
+.logo {
+    margin-right: 20px;
+    height: 70px;
+}
+
+.container1 {
+    font-size: 15px;
+}
